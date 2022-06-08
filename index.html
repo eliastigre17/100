@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container-fluid d-flex align-items-center justify-content-center vh-100">
+    <div class="row h-75 w-50 align-items-center justify-content-center rounded shadow position-relative">
+    <div class="container" id="container">
+      <div class="form-container d-flex justify-content-center align-items-center text-center sign-up-container col-6">
+        <form class="row d-flex justify-content-center align-items-center h-100  col-10" action="#">
+          <h1 class="fw-bolder">Criar Conta</h1>
+          <div class="social-container my-4">
+            <img width="40px" src="images/face-icon.png" alt="" />
+            <img width="40px" src="images/googe-icon.png" alt="" />
+            <img width="40px" src="images/linkedin-icon.png" alt="" />
+          </div>
+          <span>ou use o seu E-mail para se registrar!</span>
+          <input class="form-control mt-2 p-3 fs-5" type="text" placeholder="Nome" />
+          <input class="form-control mt-2 p-3 fs-5" type="email" placeholder="E-mail" />
+          <input class="form-control mt-2 p-3 fs-5" type="password" placeholder="Senha" />
+          <button class="btn bg-danger gradient rounded-4 mt-3 px-5 fs-5 fw-bold text-light">Criar Conta</button>
+        </form>
+      </div>
+      <div class="sign-in-container form-container d-flex justify-content-center align-items-end text-center sign-up-container col-6 end-0 position-absolute">
+        <form class="row d-flex justify-content-center align-items-center col-10 position-absolute" action="#">
+          <h1 class="fw-bolder">Login</h1>
+          <div class="social-container my-4">
+            <img width="40px" src="images/face-icon.png" alt="" />
+            <img width="40px" src="images/googe-icon.png" alt="" />
+            <img width="40px" src="images/linkedin-icon.png" alt="" />
+          </div>
+          <span>ou use sua conta!</span>
+          <input class="form-control mt-2 p-3 fs-5" type="email" placeholder="E-mail" />
+          <input class="form-control mt-2 p-3 fs-5" type="password" placeholder="Senha" />
+          <a class="mt-3" href="#">Esqueci minha senha</a>
+          <button  class="btn bg-danger gradient rounded-4 mt-3 px-5 fs-5 fw-bold text-light">Entrar</button>
+        </form>
+      </div>
+      <div class="overlay-container position-absolute rounded">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left position-absolute text-light">
+            <h1>Olá, Amigo(a)!</h1>
+            <p>
+              Digite seus dados e comece uma jornada com a gente!
+            </p>
+            <button class="ghost btn border-light gradient rounded-4 mt-3 px-5 fs-5 fw-bold text-light" id="signIn">Criar Conta</button>
+          </div>
+          <div class="overlay-panel overlay-right position-absolute text-light">
+            <h1>Bem-vindo(a) de volta!</h1>
+            <p>Para se manter conectado conosco, por favor faça login com seus dados pessoais.</p>
+            <button class="ghost btn border-light gradient rounded-4 mt-3 px-5 fs-5 fw-bold text-light" id="signUp">Fazer Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
